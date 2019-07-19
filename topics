@@ -1,2 +1,4 @@
 // 在给定字符串中找出小数点后第一位是3的数字, 返回其整数位
-let str = ""
+let str = "10.3hello0.3he0.24";
+let reg = new RegExp('[0-9]+(?=\.3)', 'g');
+str.match(reg);
